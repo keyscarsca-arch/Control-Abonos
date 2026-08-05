@@ -38,7 +38,10 @@ android {
     buildFeatures {
         compose = true
     }
-    packaging {
+composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.14"
+    }
+packaging {
         resources.excludes.add("META-INF/*")
     }
 }
